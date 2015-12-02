@@ -16,3 +16,5 @@ the resources magical route.
 the 7 restful routes and their route names and standard controller mapping.
 in fact, a standard restful resource is so convention oriented if you want there is a scaffold generator
 break down the scaffold generated code migration model route controller index + views show + views - before_action new + views - shared form partial, well explain more but you can recognize the idea create - strong params edit + views update destroy
+
+<a href='https://learn.co/lessons/rails-resource-and-scaffold-generator' data-visibility='hidden'>View this lesson on Learn.co</a>
