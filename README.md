@@ -183,9 +183,6 @@ def article_params
 end
 ```
 
-If you remember back to how we integrated strong params into the `create` and `update` actions to secure data coming in from our forms, the scaffold's controller created a single method that returns the strong params so that the `create` and `update` actions simply need to pass in the method `article_params` instead of duplicating the `params.require(:article).permit(:title, :body)` strong parameter call. This may not seem to be a huge issue, however every time you add a new attribute to your database table you're required to update the `permit` method and add in the new column name(s), which is why it's more efficient to abstract the process into a single method and remove the duplicate code.
-
-
 So even though scaffolds are great for learning how CRUD works in Rails, it's still considered a bad practice to use them in production applications. The main reason why scaffolds are discouraged in production is because they create so much code and so many files that they can be hard to manage.
 
 From my personal development experience, I've found that my best applications were built by following TDD principles where I created features one element at a time, whereas scaffolds build dozens of processes instantly. Truth be told, when I use a scaffold it usually takes me more time going through each file that was created to remove code/files that I'm not going to be using than it would have taken to build the feature from scratch!
