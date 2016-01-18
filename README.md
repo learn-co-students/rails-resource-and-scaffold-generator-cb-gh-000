@@ -11,9 +11,9 @@
 
 ## Intro
 
-In a [previous lesson](https://github.com/learn-co-curriculum/rails-generators-readme) we reviewed each of the popular generators in Rails, I purposefully left one out, the Rails `scaffold` generator. The reason for this is mainly due to the fact that it's not considered a good practice to use scaffolds in a production application. With that being said, I do think it's important to study scaffolds since they can be a great reference for how we can build CRUD functionality into our apps.
+In a [previous lesson](https://github.com/learn-co-curriculum/rails-generators-readme) we reviewed each of the popular generators in Rails. I purposefully left one out: the Rails `scaffold` generator. The reason for this is mainly due to the fact that it's not considered a good practice to use scaffolds in a production application. With that being said, I do think it's important to study scaffolds since they can be a great reference for how we can build CRUD functionality into our apps.
 
-First lets discuss why it's not a great idea to use scaffolds in real world development, let's start with a case study to see what a scaffold actually creates, let's run this command in the terminal:
+First lets discuss why it's not a great idea to use scaffolds in real world development. Let's start with a case study to see what a scaffold actually creates. Run this command in the terminal:
 
 ```
 rails g scaffold Article title:string body:text
@@ -65,7 +65,7 @@ invoke  scss
 create    app/assets/stylesheets/scaffolds.scss
 ```
 
-If you remember back to the [lesson on generators](https://github.com/learn-co-curriculum/rails-generators-readme) you will remember that the other other generators: `migrations`, `controllers`, and `resources` created a structure and backend functionality for our code, however scaffolds actually go beyond the other generators and create both the front and backend code needed for CRUD features. If you startup the rails server and navigate to `localhost:3000/articles` you will see the screens below:
+If you remember back to the [lesson on generators](https://github.com/learn-co-curriculum/rails-generators-readme) you will remember that the other generators ( `migrations`, `controllers`, and `resources`) created a structure and backend functionality for our code. However, scaffolds actually go beyond the other generators and create both the front and backend code needed for CRUD features. If you startup the rails server and navigate to `localhost:3000/articles` you will see the screens below:
 
 ![Scaffold Screen](https://s3.amazonaws.com/flatiron-bucket/readme-lessons/scaffolds.png)
 
@@ -85,7 +85,7 @@ What did the scaffold build for us? If you go through the files that got printed
 
 * And every other component needed to perform CRUD functionality
 
-One thing I really like about using the scaffold generator to teach Rails is how they setup the controller, below are the contents of the `articles_controller.rb` file:
+One thing I really like about using the scaffold generator to teach Rails is how they setup the controller. Below are the contents of the `articles_controller.rb` file:
 
 ```ruby
 class ArticlesController < ApplicationController
@@ -170,7 +170,7 @@ If you look through the code you'll see a few familiar methods, such as: `index`
 @arcitle = Article.find(params[:id])
 ```
 
-This was necessary so that we could grab the `/:id` parameter from the URL string, but as you may have noticed, the scaffold implemented an elegant solution to remove the duplicate code. By placing the code:
+This was necessary so that we could grab the `/:id` parameter from the URL string, but as you may have noticed, the scaffold implemented an elegant solution to remove the duplicate code by placing the code:
 
 ```ruby
 before_action :set_article, only: [:show, :edit, :update, :destroy]
@@ -217,7 +217,7 @@ An analogy that is helpful for me is going on a road trip:
 
 * A `scaffold` generator is like driving double the speed limit and driving past your exit by 50 miles, forcing you to backtrack all the way back to get on the right road
 
-* A `resource` generator is like going the speed limit and taking the right exit, the `scaffold` may have flown by you initially, but with the `resource` option you'll end up getting to the final destination in one piece
+* A `resource` generator is like going the speed limit and taking the right exit; the `scaffold` may have flown by you initially, but with the `resource` option you'll end up getting to the final destination in one piece
 
 
 ## Resources
