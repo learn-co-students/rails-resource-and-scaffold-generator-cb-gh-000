@@ -224,4 +224,4 @@ An analogy that is helpful for me is going on a road trip:
 
 * [Rails Generator Documentation](http://api.rubyonrails.org/classes/Rails/Generators.html)
 
-<a href='https://learn.co/lessons/rails-resource-and-scaffold-generator' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/rails-resource-and-scaffold-generator' title='Resource and Scaffold Generator'>Resource and Scaffold Generator</a> on Learn.co and start learning to code for free.</p>
