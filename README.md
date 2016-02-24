@@ -167,7 +167,7 @@ end
 If you look through the code you'll see a few familiar methods, such as: `index`, `new`, `edit`, `update`, and `show`. If you remember prior lessons you may remember that we had some duplicate code, for example if we had: `show`, `edit`, and `update` actions in the controller we had three different calls such as:
 
 ```ruby
-@arcitle = Article.find(params[:id])
+@article = Article.find(params[:id])
 ```
 
 This was necessary so that we could grab the `/:id` parameter from the URL string, but as you may have noticed, the scaffold implemented an elegant solution to remove the duplicate code by placing the code:
@@ -224,4 +224,6 @@ An analogy that is helpful for me is going on a road trip:
 
 * [Rails Generator Documentation](http://api.rubyonrails.org/classes/Rails/Generators.html)
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/rails-resource-and-scaffold-generator' title='Resource and Scaffold Generator'>Resource and Scaffold Generator</a> on Learn.co and start learning to code for free.</p>
+<a href='https://learn.co/lessons/rails-resource-and-scaffold-generator' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/rails-resource-and-scaffold-generator'>Resource Generator/ Routes</a> on Learn.co and start learning to code for free.</p>
